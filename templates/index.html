@@ -24,6 +24,11 @@
   <body>
     <h1>Hello, world!</h1>
     <h2>dogs</h2>
+    <ul>
+      {% for dog in dogs %}
+      <li>{{ dog.d_name }} - {{ dog.d_age }} - {{ dog.d_type }}</li>
+      {% endfor %}
+    </ul>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script
